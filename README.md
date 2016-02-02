@@ -13,16 +13,20 @@ Custom Hardware board for controlling 5 Led Channels via PWM (RGB + Warm/Cold Wh
 - 1x 2,54mm 4pin header
 - 1x Micro SMD Tact Switch 2 pin 3*6*2.5 mm 
 
-# Software
-Work in Progress. The idea is to design a custom firmware that will interface with fhem (http://fhem.de/) to allow advanced controlling of the LEDs.
-The idea is to render color transitions on the esp. (Instead of sending individual colors for transitions). 
-Also we wish to include certain scenes (sunrise, sunset, candle light) into the controller
+# Firmwarre
+Firmware is still work in progress.
 
-Discussion is here:
-http://forum.fhem.de/index.php/topic,34464.0.html (German)
+Latest can be found here:
+https://github.com/patrickjahns/esp_rgbww_controller_fw
 
 # Modifying
 
 The schematic and board files are compatible with eagle 7.2+
+
+## Ideas
+Here are some ideas for future revisions
+- connect ADC to detect powerfailure 
+
+
 
 
