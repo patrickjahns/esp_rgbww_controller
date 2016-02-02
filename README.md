@@ -14,7 +14,7 @@ Custom Hardware board for controlling 5 Led Channels via PWM (RGB + Warm/Cold Wh
 - 1x Micro SMD Tact Switch 2 pin 3*6*2.5 mm 
 
 # Software
-Work in Progress. The idea is to design a custom firmware that will interface with fhem to allow advanced controlling of the LEDs.
+Work in Progress. The idea is to design a custom firmware that will interface with fhem (http://fhem.de/) to allow advanced controlling of the LEDs.
 The idea is to render color transitions on the esp. (Instead of sending individual colors for transitions). 
 Also we wish to include certain scenes (sunrise, sunset, candle light) into the controller
 
