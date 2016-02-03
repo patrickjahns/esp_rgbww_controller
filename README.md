@@ -11,7 +11,23 @@ Custom Hardware board for controlling 5 Led Channels via PWM (RGB + Warm/Cold Wh
 - 1x 5,08mm 3pin terminal block
 - 1x 5,08mm 4pin terminal block
 - 1x 2,54mm 4pin header
-- 1x Micro SMD Tact Switch 2 pin 3*6*2.5 mm 
+- 1x Micro SMD Tact Switch 2 pin 3*6*2.5 mm (optional)
+
+# Assembly
+Assembly of the PCB Board is straight forward, solder all parts to the PCB.
+
+__Caution :__ before soldering the esp module to the PCB, set the output voltage of XM1584 converter  to 3.3v
+
+### Recommended steps
+- Start with soldering the smd resistors
+- __Ensure the output voltage of XM1584 converter is 3.3v before continuing__. 
+- Solder the XM1584 Power Board 
+- Solder ESP8266 Module 
+- Optional: solder SMD Tact Switch
+- Solder Elko
+- Solder Terminal Blocks, 4pin header 
+- Solder FETs
+
 
 # Firmwarre
 Firmware is still work in progress.
@@ -20,13 +36,21 @@ Latest can be found here:
 https://github.com/patrickjahns/esp_rgbww_controller_fw
 
 # Modifying
-
 The schematic and board files are compatible with eagle 7.2+
 
 ## Ideas
 Here are some ideas for future revisions
 - connect ADC to detect powerfailure 
+- rearrange FETs so they can be bend allowing for a smaller height oft a case
 
+# Resources
+
+* [ESP RGB Project](https://github.com/RiRomain/esp-dimmer-hardware)
+* [H801 Wifi Controller Hack](http://chaozlabs.blogspot.de/2015/08/esp8266-in-wild-wifi-led-controller-hack.html)
+
+
+# Credits
+Thanks to RiRomain for his excellent documentated [ESP RGB Project](https://github.com/RiRomain/esp-dimmer-hardware)
 
 
 
