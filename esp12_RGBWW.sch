@@ -11136,34 +11136,34 @@ W = angled&lt;p&gt;
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="12V" width="1.016" drill="0">
+<class number="1" name="12V" width="0.508" drill="0">
 </class>
-<class number="2" name="GNDRGB" width="1.016" drill="0">
+<class number="2" name="GNDRGB" width="0.508" drill="0">
 </class>
-<class number="3" name="3.3V" width="0.635" drill="0">
+<class number="3" name="3.3V" width="0.508" drill="0">
 </class>
-<class number="4" name="GND3.3V" width="0.635" drill="0">
+<class number="4" name="GND3.3V" width="0.508" drill="0">
 </class>
 <class number="5" name="Signal" width="0.381" drill="0">
 </class>
 </classes>
 <parts>
-<part name="GPIO2" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
-<part name="GPIO15" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
-<part name="CH_PD" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
+<part name="GPIO2" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="GPIO15" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="CH_PD" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="DC_CONVERTER" library="CN1594_smd" deviceset="CN1594" device="THROUGH-HOLE"/>
 <part name="ESP-12" library="ESP8266-ESP12" deviceset="ESP8266_ESP-12" device=""/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="IRLZ44N-WW" library="PAsystem" deviceset="TIP121" device="" value=""/>
 <part name="IRLZ44N-CW" library="PAsystem" deviceset="TIP121" device="" value=""/>
 <part name="IRLZ44N-B" library="PAsystem" deviceset="TIP121" device="" value=""/>
 <part name="RST" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD-1101NE" value=""/>
 <part name="IRLZ44N-G" library="PAsystem" deviceset="TIP121" device="" value=""/>
 <part name="IRLZ44N-R" library="PAsystem" deviceset="TIP121" device="" value=""/>
-<part name="R4" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="P+1" library="supply1" deviceset="+12V" device=""/>
 <part name="P+2" library="supply1" deviceset="+12V" device=""/>
 <part name="P+3" library="supply1" deviceset="+12V" device=""/>
@@ -11176,6 +11176,9 @@ W = angled&lt;p&gt;
 <part name="W" library="con-wago-508" deviceset="W237-03P" device=""/>
 <part name="RGB" library="con-wago-508" deviceset="W237-04P" device=""/>
 <part name="C1" library="rcl" deviceset="CPOL-EU" device="E3.5-8"/>
+<part name="P+5" library="supply1" deviceset="+12V" device=""/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 </parts>
 <sheets>
 <sheet>
@@ -11224,6 +11227,9 @@ W = angled&lt;p&gt;
 <instance part="RGB" gate="-3" x="63.5" y="15.24" rot="R180"/>
 <instance part="RGB" gate="-4" x="63.5" y="20.32" rot="R180"/>
 <instance part="C1" gate="G$1" x="-48.26" y="53.34" rot="R180"/>
+<instance part="P+5" gate="1" x="-68.58" y="15.24" rot="R90"/>
+<instance part="R6" gate="G$1" x="-40.64" y="20.32" rot="R270"/>
+<instance part="R7" gate="G$1" x="-40.64" y="30.48" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -11251,7 +11257,7 @@ W = angled&lt;p&gt;
 <pinref part="PROG" gate="1" pin="3"/>
 </segment>
 </net>
-<net name="GND" class="2">
+<net name="GND" class="0">
 <segment>
 <pinref part="IRLZ44N-WW" gate="G$1" pin="E"/>
 <junction x="45.72" y="71.12"/>
@@ -11286,7 +11292,7 @@ W = angled&lt;p&gt;
 <wire x1="-81.28" y1="60.96" x2="-76.2" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="2">
+<net name="N$11" class="0">
 <segment>
 <pinref part="IRLZ44N-B" gate="G$1" pin="C"/>
 <junction x="45.72" y="35.56"/>
@@ -11343,6 +11349,10 @@ W = angled&lt;p&gt;
 <wire x1="-48.26" y1="60.96" x2="-48.26" y2="58.42" width="0.1524" layer="91"/>
 <junction x="-48.26" y="60.96"/>
 <junction x="-10.16" y="76.2"/>
+<wire x1="-40.64" y1="40.64" x2="-33.02" y2="40.64" width="0.1524" layer="91"/>
+<junction x="-33.02" y="40.64"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="-40.64" y1="35.56" x2="-40.64" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -11378,8 +11388,8 @@ W = angled&lt;p&gt;
 <pinref part="GPIO2" gate="G$1" pin="2"/>
 <wire x1="-45.72" y1="50.8" x2="-48.26" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="-48.26" y1="50.8" x2="-48.26" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="12.7" x2="-22.86" y2="12.7" width="0.1524" layer="91"/>
 <junction x="-22.86" y="12.7"/>
+<wire x1="-48.26" y1="12.7" x2="-22.86" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="12.7" x2="-10.16" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="50.8" x2="-48.26" y2="50.8" width="0.1524" layer="91"/>
 <junction x="-48.26" y="50.8"/>
@@ -11483,6 +11493,11 @@ W = angled&lt;p&gt;
 <pinref part="P+1" gate="1" pin="+12V"/>
 <wire x1="-81.28" y1="50.8" x2="-76.2" y2="50.8" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="P+5" gate="1" pin="+12V"/>
+<wire x1="-66.04" y1="15.24" x2="-40.64" y2="15.24" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$10" class="0">
 <segment>
@@ -11505,6 +11520,16 @@ W = angled&lt;p&gt;
 <pinref part="W" gate="-3" pin="KL"/>
 <pinref part="IRLZ44N-WW" gate="G$1" pin="C"/>
 <wire x1="58.42" y1="76.2" x2="45.72" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="4">
+<segment>
+<pinref part="ESP-12" gate="G$1" pin="ADC"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="-40.64" y1="25.4" x2="-25.4" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="25.4" x2="-25.4" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<junction x="-40.64" y="25.4"/>
 </segment>
 </net>
 </nets>
