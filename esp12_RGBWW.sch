@@ -20343,7 +20343,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <pinref part="GND13" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="RGB-B-OUT" class="0">
 <segment>
 <pinref part="IRLZ44N-B" gate="G$1" pin="C"/>
 <junction x="40.64" y="-5.08"/>
@@ -20390,7 +20390,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <junction x="-12.7" y="60.96"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="RGB-B" class="0">
 <segment>
 <wire x1="10.16" y1="15.24" x2="10.16" y2="0" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="0" x2="17.78" y2="0" width="0.1524" layer="91"/>
@@ -20405,7 +20405,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <wire x1="-5.08" y1="15.24" x2="-17.78" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="R4" class="0">
+<net name="RGB-G" class="0">
 <segment>
 <wire x1="40.64" y1="20.32" x2="17.78" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="IRLZ44N-G" gate="G$1" pin="B"/>
@@ -20420,7 +20420,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <wire x1="-7.62" y1="20.32" x2="2.54" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="RGB-R-OUT" class="0">
 <segment>
 <pinref part="IRLZ44N-R" gate="G$1" pin="C"/>
 <wire x1="40.64" y1="35.56" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
@@ -20458,7 +20458,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <wire x1="-48.26" y1="38.1" x2="-48.26" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="RGB-CW-OUT" class="0">
 <segment>
 <pinref part="IRLZ44N-CW" gate="G$1" pin="C"/>
 <wire x1="40.64" y1="55.88" x2="45.72" y2="55.88" width="0.1524" layer="91"/>
@@ -20467,14 +20467,14 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <wire x1="50.8" y1="71.12" x2="45.72" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="RGB-G-OUT" class="0">
 <segment>
 <pinref part="RGB" gate="-3" pin="KL"/>
 <pinref part="IRLZ44N-G" gate="G$1" pin="C"/>
 <wire x1="50.8" y1="15.24" x2="40.64" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="RGB-WW-OUT" class="0">
 <segment>
 <pinref part="W" gate="-3" pin="KL"/>
 <pinref part="IRLZ44N-WW" gate="G$1" pin="C"/>
@@ -20529,7 +20529,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <wire x1="-38.1" y1="27.94" x2="-38.1" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$23" class="0">
+<net name="RGB-R" class="0">
 <segment>
 <pinref part="ESP-12" gate="G$1" pin="GPIO13"/>
 <wire x1="-12.7" y1="30.48" x2="-12.7" y2="25.4" width="0.1524" layer="91"/>
@@ -20544,7 +20544,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <wire x1="7.62" y1="25.4" x2="10.16" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$24" class="0">
+<net name="RGB-CW" class="0">
 <segment>
 <pinref part="ESP-12" gate="G$1" pin="GPIO5"/>
 <junction x="-20.32" y="60.96"/>
@@ -20561,7 +20561,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <wire x1="2.54" y1="66.04" x2="12.7" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$25" class="5">
+<net name="RGB-WW" class="5">
 <segment>
 <pinref part="ESP-12" gate="G$1" pin="GPIO4"/>
 <junction x="-22.86" y="60.96"/>
