@@ -43,7 +43,7 @@ __Caution :__ before soldering the esp module to the PCB, set the output voltage
 - Solder FETs
 
 
-# Firmwarre
+# Firmware
 Firmware is still work in progress.
 
 Latest can be found here:
