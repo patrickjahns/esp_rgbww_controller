@@ -1,4 +1,4 @@
-# ESP8266 WiFi RGBWW LED Dimmer v1.2
+# ESP8266 WiFi RGBWW LED Dimmer v1.3
 Custom Hardware board for controlling 5 Led Channels via PWM (RGB + Warm/Cold White). It is designed for max current ~4.5A per Channel.
 
 # Changelog
