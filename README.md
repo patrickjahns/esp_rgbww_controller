@@ -5,6 +5,7 @@ Custom Hardware board for controlling 5 Led Channels via PWM (RGB + Warm/Cold Wh
 
 * 1.3 (20.02.2016)
   * added another tact switch which can be used during boot to reset settings
+  * silksceen naming updated 
 
 * 1.2 (16.02.2016)
   * improved the layout for better EMV
@@ -20,8 +21,8 @@ Custom Hardware board for controlling 5 Led Channels via PWM (RGB + Warm/Cold Wh
 - 1x ESP8266, ESP-12 format
 - 1x XM1584 Power converter (set to 3.3v!)
 - 5x IRLZ44N Mosfet (logic level gate threshold)
-- 11x 10k resistors, 0805 (R1 - R7, GPIO2, GPIO15, REST, CH_PD)
-- 1x 1k resistors, 0805 (R7)
+- 11x 10k resistors, 0805 (R1 - R11)
+- 1x 1k resistors, 0805 (R12)
 - 1x 1000 µF Elko RM 3.5 mm (C1) 
 - 1x 100 µF Elko RM 2.5 mm (C3)
 - 1x 100 nF capacitor 0805(C3)

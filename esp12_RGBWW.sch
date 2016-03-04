@@ -20090,9 +20090,9 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="GPIO2" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="GPIO15" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="CH_PD" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R9" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="DC_CONVERTER" library="CN1594_smd" deviceset="CN1594" device="THROUGH-HOLE"/>
 <part name="ESP-12" library="ESP8266-ESP12" deviceset="ESP8266_ESP-12" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
@@ -20119,8 +20119,8 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <part name="RGB" library="con-wago-508" deviceset="W237-04P" device=""/>
 <part name="C1" library="rcl" deviceset="CPOL-EU" device="E3.5-8"/>
 <part name="P+5" library="supply1" deviceset="+12V" device=""/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R11" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R12" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
@@ -20135,7 +20135,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="REST" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R10" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="C3" library="resistor" deviceset="CPOL-EU" device="E2.5-6"/>
@@ -20148,9 +20148,9 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <plain>
 </plain>
 <instances>
-<instance part="GPIO2" gate="G$1" x="-20.32" y="78.74" rot="R180"/>
-<instance part="GPIO15" gate="G$1" x="-7.62" y="78.74"/>
-<instance part="CH_PD" gate="G$1" x="-22.86" y="20.32" rot="R270"/>
+<instance part="R7" gate="G$1" x="-20.32" y="78.74" rot="R180"/>
+<instance part="R6" gate="G$1" x="-7.62" y="78.74"/>
+<instance part="R9" gate="G$1" x="-22.86" y="20.32" rot="R270"/>
 <instance part="DC_CONVERTER" gate="G$1" x="-93.98" y="63.5" smashed="yes" rot="MR180"/>
 <instance part="ESP-12" gate="G$1" x="-20.32" y="53.34" rot="R90"/>
 <instance part="R1" gate="G$1" x="17.78" y="76.2" rot="R90"/>
@@ -20206,8 +20206,8 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <instance part="RGB" gate="-4" x="55.88" y="10.16" rot="R180"/>
 <instance part="C1" gate="G$1" x="-71.12" y="66.04"/>
 <instance part="P+5" gate="1" x="-53.34" y="40.64"/>
-<instance part="R6" gate="G$1" x="-53.34" y="30.48" rot="R90"/>
-<instance part="R7" gate="G$1" x="-53.34" y="15.24" rot="R90"/>
+<instance part="R11" gate="G$1" x="-53.34" y="30.48" rot="R90"/>
+<instance part="R12" gate="G$1" x="-53.34" y="15.24" rot="R90"/>
 <instance part="+3V1" gate="G$1" x="-58.42" y="68.58" rot="R270"/>
 <instance part="+3V2" gate="G$1" x="7.62" y="35.56"/>
 <instance part="GND4" gate="1" x="-58.42" y="58.42" rot="R90"/>
@@ -20222,7 +20222,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <instance part="GND12" gate="1" x="-2.54" y="76.2"/>
 <instance part="+3V4" gate="G$1" x="-27.94" y="10.16"/>
 <instance part="GND13" gate="1" x="-40.64" y="58.42"/>
-<instance part="REST" gate="G$1" x="-40.64" y="30.48"/>
+<instance part="R10" gate="G$1" x="-40.64" y="30.48"/>
 <instance part="+3V5" gate="G$1" x="-45.72" y="40.64"/>
 <instance part="C2" gate="G$1" x="0" y="45.72"/>
 <instance part="C3" gate="G$1" x="-111.76" y="66.04"/>
@@ -20238,14 +20238,14 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <nets>
 <net name="N$2" class="5">
 <segment>
-<pinref part="CH_PD" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="-22.86" y1="30.48" x2="-22.86" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="ESP-12" gate="G$1" pin="CH_PD"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="GPIO2" gate="G$1" pin="1"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="ESP-12" gate="G$1" pin="GPIO2"/>
 <wire x1="-15.24" y1="60.96" x2="-15.24" y2="78.74" width="0.1524" layer="91"/>
 </segment>
@@ -20300,7 +20300,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <junction x="0" y="60.96"/>
 </segment>
 <segment>
-<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R12" gate="G$1" pin="1"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="-53.34" y1="10.16" x2="-53.34" y2="2.54" width="0.1524" layer="91"/>
 </segment>
@@ -20342,7 +20342,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <wire x1="-35.56" y1="2.54" x2="-35.56" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GPIO15" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -20374,7 +20374,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <pinref part="ESP-12" gate="G$1" pin="REST"/>
 <junction x="-27.94" y="30.48"/>
 <wire x1="-35.56" y1="17.78" x2="-35.56" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="REST" gate="G$1" pin="2"/>
+<pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="-35.56" y1="30.48" x2="-27.94" y2="30.48" width="0.1524" layer="91"/>
 <junction x="-35.56" y="30.48"/>
 </segment>
@@ -20397,7 +20397,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="GPIO15" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="-12.7" y1="78.74" x2="-12.7" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="ESP-12" gate="G$1" pin="GPIO15"/>
 <wire x1="-12.7" y1="60.96" x2="-12.7" y2="55.88" width="0.1524" layer="91"/>
@@ -20463,7 +20463,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <junction x="-111.76" y="68.58"/>
 </segment>
 <segment>
-<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="R11" gate="G$1" pin="2"/>
 <pinref part="P+5" gate="1" pin="+12V"/>
 <wire x1="-53.34" y1="38.1" x2="-53.34" y2="35.56" width="0.1524" layer="91"/>
 </segment>
@@ -20494,10 +20494,10 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <net name="N$21" class="4">
 <segment>
 <pinref part="ESP-12" gate="G$1" pin="ADC"/>
-<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="-53.34" y1="25.4" x2="-25.4" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="25.4" x2="-25.4" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R12" gate="G$1" pin="2"/>
 <junction x="-53.34" y="25.4"/>
 <wire x1="-53.34" y1="25.4" x2="-53.34" y2="20.32" width="0.1524" layer="91"/>
 </segment>
@@ -20522,12 +20522,12 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <junction x="0" y="30.48"/>
 </segment>
 <segment>
-<pinref part="GPIO2" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
 <wire x1="-25.4" y1="78.74" x2="-25.4" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="CH_PD" gate="G$1" pin="2"/>
+<pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="-27.94" y1="7.62" x2="-27.94" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="5.08" x2="-22.86" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="5.08" x2="-22.86" y2="15.24" width="0.1524" layer="91"/>
@@ -20538,7 +20538,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <junction x="-22.86" y="5.08"/>
 </segment>
 <segment>
-<pinref part="REST" gate="G$1" pin="1"/>
+<pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 <wire x1="-45.72" y1="30.48" x2="-45.72" y2="38.1" width="0.1524" layer="91"/>
 </segment>
