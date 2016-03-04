@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -169,6 +169,8 @@
 <text x="48.26" y="41.91" size="1.9304" layer="25" font="vector" rot="R90" align="center">WW</text>
 <text x="48.26" y="36.83" size="1.9304" layer="25" font="vector" rot="R90" align="center">CW</text>
 <text x="7.62" y="13.97" size="1.6764" layer="25" rot="R270">RGBWW 1.3</text>
+<text x="30.48" y="3.81" size="1.27" layer="25" font="fixed">5-28V</text>
+<text x="30.48" y="6.35" size="1.27" layer="25" font="fixed" align="center-left">16A max</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -3103,46 +3105,37 @@ grid 2.54 mm, diameter 6 mm</description>
 <class number="5" name="Signal" width="0.381" drill="0">
 </class>
 </classes>
-<designrules name="DFRobot_Eagle_Rule_v0.4">
-<description language="en">
-
-&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<designrules name="LaenPCBOrder">
+<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
-The default Design Rules have been set to cover
-a wide range of applications. Your particular design
-may have different requirements, so please make the
-necessary adjustments and save your customized
-design rules under a new name.
-</description>
-<description language="it">
-
-&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+Die Standard-Design-Rules sind so gewählt, dass sie für 
+die meisten Anwendungen passen. Sollte ihre Platine 
+besondere Anforderungen haben, treffen Sie die erforderlichen
+Einstellungen hier und speichern die Design Rules unter 
+einem neuen Namen ab.</description>
+<description language="en">&lt;b&gt;Laen's PCB Order Design Rules&lt;/b&gt;
 &lt;p&gt;
-The default Design Rules have been set to cover
-a wide range of applications. Your particular design
-may have different requirements, so please make the
-necessary adjustments and save your customized
-design rules under a new name.</description>
+Please make sure your boards conform to these design rules.</description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mtCopper" value="0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm"/>
+<param name="mtIsolate" value="1.5011mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
 <param name="mdWireWire" value="6mil"/>
 <param name="mdWirePad" value="6mil"/>
 <param name="mdWireVia" value="6mil"/>
 <param name="mdPadPad" value="6mil"/>
 <param name="mdPadVia" value="6mil"/>
 <param name="mdViaVia" value="6mil"/>
-<param name="mdSmdPad" value="0mil"/>
-<param name="mdSmdVia" value="0mil"/>
-<param name="mdSmdSmd" value="0mil"/>
+<param name="mdSmdPad" value="6mil"/>
+<param name="mdSmdVia" value="6mil"/>
+<param name="mdSmdSmd" value="6mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="10mil"/>
-<param name="mdDrill" value="10mil"/>
+<param name="mdCopperDimension" value="15mil"/>
+<param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="6mil"/>
-<param name="msDrill" value="12mil"/>
-<param name="msMicroVia" value="12mil"/>
+<param name="msDrill" value="13mil"/>
+<param name="msMicroVia" value="13mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -3151,15 +3144,15 @@ design rules under a new name.</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="12mil"/>
+<param name="rlMinPadTop" value="7mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMinPadInner" value="7mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="12mil"/>
+<param name="rlMinPadBottom" value="7mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMinViaOuter" value="7mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMinViaInner" value="7mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -3172,11 +3165,11 @@ design rules under a new name.</description>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="2mil"/>
-<param name="mlMaxStopFrame" value="2mil"/>
+<param name="mlMinStopFrame" value="3mil"/>
+<param name="mlMaxStopFrame" value="3mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="25mil"/>
+<param name="mlViaStopLimit" value="0mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -3288,15 +3281,15 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="CH_PD" library="rcl" package="R0805" value="10k" x="6.35" y="35.56" smashed="yes" rot="MR270">
+<element name="R9" library="rcl" package="R0805" value="10k" x="6.35" y="35.56" smashed="yes" rot="MR270">
 <attribute name="NAME" x="4.445" y="33.655" size="1.27" layer="26" rot="MR90" align="center-left"/>
 </element>
 <element name="DC_CONVERTER" library="CN1594_smd" package="CN1594" value="CN1594THROUGH-HOLE" x="17.78" y="21.59" smashed="yes" rot="MR90"/>
 <element name="ESP-12" library="ESP8266-ESP12" package="ESP8266-ESP12" value="ESP8266_ESP-12" x="6.35" y="26.67"/>
-<element name="GPIO15" library="rcl" package="R0805" value="10k" x="21.59" y="35.56" smashed="yes" rot="MR90">
+<element name="R6" library="rcl" package="R0805" value="10k" x="21.59" y="35.56" smashed="yes" rot="MR90">
 <attribute name="NAME" x="22.86" y="33.655" size="1.27" layer="26" rot="MR90"/>
 </element>
-<element name="GPIO2" library="rcl" package="R0805" value="10k" x="17.78" y="35.56" smashed="yes" rot="MR270">
+<element name="R7" library="rcl" package="R0805" value="10k" x="17.78" y="35.56" smashed="yes" rot="MR270">
 <attribute name="NAME" x="15.875" y="33.655" size="1.27" layer="26" rot="MR90" align="center-left"/>
 </element>
 <element name="IRLZ44N-B" library="PAsystem" package="TO220AV" value="" x="34.29" y="29.21" smashed="yes">
@@ -3314,12 +3307,12 @@ design rules under a new name.</description>
 <element name="IRLZ44N-CW" library="PAsystem" package="TO220AV" value="" x="34.29" y="36.83" smashed="yes">
 <attribute name="VALUE" x="29.21" y="29.21" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="PROG" library="con-lstb" package="MA04-1" value="" x="29.21" y="48.26" smashed="yes">
-<attribute name="MPN" value="" x="29.21" y="48.26" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="29.21" y="48.26" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="29.21" y="48.26" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="29.21" y="48.26" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="29.845" y="49.911" size="1.27" layer="27" ratio="10"/>
+<element name="PROG" library="con-lstb" package="MA04-1" value="" x="29.21" y="48.26" smashed="yes" rot="SR0">
+<attribute name="MPN" value="" x="29.21" y="48.26" size="1.778" layer="27" rot="SR0" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="29.21" y="48.26" size="1.778" layer="27" rot="SR0" display="off"/>
+<attribute name="MF" value="" x="29.21" y="48.26" size="1.778" layer="27" rot="SR0" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="29.21" y="48.26" size="1.778" layer="27" rot="SR0" display="off"/>
+<attribute name="VALUE" x="29.845" y="49.911" size="1.27" layer="27" ratio="10" rot="SR0"/>
 </element>
 <element name="R4" library="rcl" package="R0805" value="10k" x="26.67" y="20.32" smashed="yes" rot="R90">
 <attribute name="NAME" x="25.4" y="19.685" size="1.27" layer="25" rot="R90"/>
@@ -3367,15 +3360,15 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="4.572" y="21.336" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="U$1" library="fhem.logo" package="LOGO" value="" x="6.35" y="6.35" rot="R90"/>
-<element name="R6" library="rcl" package="R0805" value="10k" x="16.51" y="16.51" smashed="yes" rot="R270">
+<element name="R11" library="rcl" package="R0805" value="10k" x="16.51" y="16.51" smashed="yes" rot="R270">
 <attribute name="NAME" x="15.24" y="15.875" size="1.27" layer="25" rot="R270" align="top-right"/>
 <attribute name="VALUE" x="19.05" y="18.415" size="1.27" layer="27" rot="R270" align="top-left"/>
 </element>
-<element name="R7" library="rcl" package="R0805" value="1k" x="16.51" y="21.59" smashed="yes" rot="R270">
+<element name="R12" library="rcl" package="R0805" value="1k" x="16.51" y="21.59" smashed="yes" rot="R270">
 <attribute name="NAME" x="13.97" y="23.495" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="19.05" y="22.225" size="1.27" layer="27" rot="R270" align="top-left"/>
 </element>
-<element name="REST" library="rcl" package="R0805" value="10k" x="13.97" y="35.56" smashed="yes" rot="MR90">
+<element name="R10" library="rcl" package="R0805" value="10k" x="13.97" y="35.56" smashed="yes" rot="MR90">
 <attribute name="NAME" x="11.43" y="33.655" size="1.27" layer="26" rot="MR90"/>
 </element>
 <element name="C2" library="rcl" package="C0805" value="100n" x="3.81" y="24.13" smashed="yes">
@@ -3396,7 +3389,7 @@ design rules under a new name.</description>
 </elements>
 <signals>
 <signal name="N$2" class="5">
-<contactref element="CH_PD" pad="1"/>
+<contactref element="R9" pad="1"/>
 <contactref element="ESP-12" pad="11"/>
 <wire x1="6.35" y1="38.67" x2="8.19" y2="38.67" width="0.6096" layer="1"/>
 <wire x1="8.19" y1="38.67" x2="8.89" y2="39.37" width="0.6096" layer="1"/>
@@ -3405,7 +3398,7 @@ design rules under a new name.</description>
 <wire x1="6.35" y1="36.83" x2="8.89" y2="39.37" width="0.6096" layer="16"/>
 </signal>
 <signal name="N$3">
-<contactref element="GPIO2" pad="1"/>
+<contactref element="R7" pad="1"/>
 <contactref element="ESP-12" pad="3"/>
 <wire x1="22.55" y1="32.67" x2="20.67" y2="32.67" width="0.6096" layer="1"/>
 <wire x1="20.67" y1="32.67" x2="19.05" y2="34.29" width="0.6096" layer="1"/>
@@ -3444,7 +3437,7 @@ design rules under a new name.</description>
 <contactref element="DC_CONVERTER" pad="OUT-(2)"/>
 <contactref element="R5" pad="2"/>
 <contactref element="ESP-12" pad="1"/>
-<contactref element="R7" pad="1"/>
+<contactref element="R12" pad="1"/>
 <contactref element="IRLZ44N-G" pad="E"/>
 <contactref element="R4" pad="2"/>
 <contactref element="IRLZ44N-B" pad="E"/>
@@ -3455,7 +3448,7 @@ design rules under a new name.</description>
 <contactref element="R1" pad="1"/>
 <contactref element="RST" pad="1"/>
 <contactref element="IRLZ44N-R" pad="E"/>
-<contactref element="GPIO15" pad="2"/>
+<contactref element="R6" pad="2"/>
 <contactref element="PROG" pad="4"/>
 <wire x1="36.83" y1="34.29" x2="36.83" y2="38.1" width="0.6096" layer="16"/>
 <wire x1="36.83" y1="38.1" x2="36.83" y2="41.91" width="0.6096" layer="16"/>
@@ -3543,7 +3536,7 @@ design rules under a new name.</description>
 <contactref element="ESP-12" pad="9"/>
 <wire x1="6.35" y1="42.67" x2="3.66" y2="42.67" width="0.6096" layer="1"/>
 <wire x1="3.66" y1="42.67" x2="2.54" y2="43.79" width="0.6096" layer="1"/>
-<contactref element="REST" pad="2"/>
+<contactref element="R10" pad="2"/>
 <wire x1="6.35" y1="42.67" x2="13.21" y2="42.67" width="0.6096" layer="1"/>
 <wire x1="13.21" y1="42.67" x2="13.97" y2="41.91" width="0.6096" layer="1"/>
 <via x="13.97" y="41.91" extent="1-16" drill="0.6" shape="octagon"/>
@@ -3568,7 +3561,7 @@ design rules under a new name.</description>
 <wire x1="25.4" y1="46.99" x2="25.4" y2="48.26" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$7">
-<contactref element="GPIO15" pad="1"/>
+<contactref element="R6" pad="1"/>
 <contactref element="ESP-12" pad="2"/>
 <wire x1="22.55" y1="30.67" x2="20.51" y2="30.67" width="0.6096" layer="1"/>
 <wire x1="20.51" y1="30.67" x2="20.32" y2="30.48" width="0.6096" layer="1"/>
@@ -3631,7 +3624,7 @@ design rules under a new name.</description>
 <vertex x="49.53" y="5.08"/>
 <vertex x="44.45" y="5.08"/>
 </polygon>
-<contactref element="R6" pad="2"/>
+<contactref element="R11" pad="2"/>
 <wire x1="25.4" y1="1.27" x2="15.24" y2="1.27" width="0.6096" layer="16"/>
 <via x="16.51" y="12.7" extent="1-16" drill="0.6" shape="octagon"/>
 <wire x1="16.51" y1="12.7" x2="16.51" y2="15.56" width="0.6096" layer="1"/>
@@ -3698,9 +3691,9 @@ design rules under a new name.</description>
 <signal name="N$19">
 </signal>
 <signal name="N$21" class="4">
-<contactref element="R6" pad="1"/>
+<contactref element="R11" pad="1"/>
 <contactref element="ESP-12" pad="10"/>
-<contactref element="R7" pad="2"/>
+<contactref element="R12" pad="2"/>
 <wire x1="16.51" y1="17.46" x2="16.51" y2="20.64" width="0.6096" layer="1"/>
 <wire x1="6.35" y1="40.67" x2="12.67" y2="40.67" width="0.6096" layer="1"/>
 <wire x1="12.67" y1="40.67" x2="16.51" y2="36.83" width="0.6096" layer="1"/>
@@ -3717,12 +3710,12 @@ design rules under a new name.</description>
 <contactref element="C1" pad="+"/>
 <contactref element="DC_CONVERTER" pad="OUT+(1)"/>
 <contactref element="ESP-12" pad="16"/>
-<contactref element="GPIO2" pad="2"/>
-<contactref element="CH_PD" pad="2"/>
+<contactref element="R7" pad="2"/>
+<contactref element="R9" pad="2"/>
 <wire x1="13.2334" y1="31.115" x2="13.2334" y2="30.2514" width="0.6096" layer="16"/>
 <wire x1="17.78" y1="34.61" x2="13.97" y2="34.61" width="0.6096" layer="16"/>
 <wire x1="13.97" y1="34.61" x2="12.7" y2="34.61" width="0.6096" layer="16"/>
-<contactref element="REST" pad="1"/>
+<contactref element="R10" pad="1"/>
 <wire x1="12.7" y1="34.61" x2="10.16" y2="34.61" width="0.6096" layer="16"/>
 <wire x1="10.16" y1="34.61" x2="6.35" y2="34.61" width="0.6096" layer="16"/>
 <wire x1="13.2334" y1="31.115" x2="13.2334" y2="34.0766" width="0.6096" layer="16"/>
