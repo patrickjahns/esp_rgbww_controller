@@ -62,6 +62,8 @@ The schematic and board files are compatible with eagle 7.2+
 
 ## Ideas
 Here are some ideas for future revisions
+- see if we can clear some GPIOs and provide them via PIN Header for other enhancements (i.e. IR / Rotary Controller) 
+- change layout for VCC/GND to be on the left side
 - ~~connect ADC to detect power failure~~ 
 
 
