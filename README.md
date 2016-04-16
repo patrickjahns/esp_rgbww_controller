@@ -72,5 +72,8 @@ Here are some ideas for future revisions
 * [H801 Wifi Controller Hack](http://chaozlabs.blogspot.de/2015/08/esp8266-in-wild-wifi-led-controller-hack.html)
 
 
+# Thread in Fhem Forum
+* [Entwicklung/Sammelbestellung RGBWW Wifi Led Controller](https://forum.fhem.de/index.php/topic,48918.msg)
+
 # Credits
 Thanks to RiRomain for his excellent documentated [ESP RGB Project](https://github.com/RiRomain/esp-dimmer-hardware)
