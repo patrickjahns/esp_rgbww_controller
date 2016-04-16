@@ -25,7 +25,7 @@ Custom Hardware board for controlling 5 Led Channels via PWM (RGB + Warm/Cold Wh
 - 1x 1k resistors, 0805 (R12)
 - 1x 1000 µF Elko RM 3.5 mm (C1) 
 - 1x 100 µF Elko RM 2.5 mm (C3)
-- 1x 100 nF capacitor 0805(C3)
+- 1x 100 nF capacitor 0805(C2)
 - 3x 5,08mm 2pin terminal block
 - 1x 5,08mm 3pin terminal block
 - 1x 2,54mm 4pin header
