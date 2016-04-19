@@ -23,9 +23,9 @@ Custom Hardware board for controlling 5 Led Channels via PWM (RGB + Warm/Cold Wh
 - 5x IRLZ44N Mosfet (logic level gate threshold)
 - 11x 10k resistors, 0805 (R1 - R11)
 - 1x 1k resistors, 0805 (R12)
-- 1x 1000 µF Elko RM 3.5 mm (C1) 
+- 1x 470 µF Elko RM 3.5 mm (C1) 
 - 1x 100 µF Elko RM 2.5 mm (C3)
-- 1x 100 nF capacitor 0805(C3)
+- 1x 100 nF capacitor 0805(C2)
 - 3x 5,08mm 2pin terminal block
 - 1x 5,08mm 3pin terminal block
 - 1x 2,54mm 4pin header
@@ -71,6 +71,9 @@ Here are some ideas for future revisions
 * [ESP RGB Project](https://github.com/RiRomain/esp-dimmer-hardware)
 * [H801 Wifi Controller Hack](http://chaozlabs.blogspot.de/2015/08/esp8266-in-wild-wifi-led-controller-hack.html)
 
+
+# Thread in Fhem Forum
+* [Entwicklung/Sammelbestellung RGBWW Wifi Led Controller](https://forum.fhem.de/index.php/topic,48918.msg)
 
 # Credits
 Thanks to RiRomain for his excellent documentated [ESP RGB Project](https://github.com/RiRomain/esp-dimmer-hardware)
