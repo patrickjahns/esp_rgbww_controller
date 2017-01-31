@@ -1,7 +1,13 @@
-# ESP8266 WiFi RGBWW LED Dimmer v1.3
+# ESP8266 WiFi RGBWW LED Dimmer v1.5
 Custom Hardware board for controlling 5 Led Channels via PWM (RGB + Warm/Cold White). It is designed for max current ~4.5A per Channel.
 
 # Changelog
+
+* 1.5 (31.01.2017)
+  * DCDC wandler has been remeasured and provided for through hole mounting on pin headers
+  * Jumper introduced for allowing for external 3,3V connections
+  * measurements have been changed to 53mm*47mm with mounting holes tailored towards "Strapubox CO 4" casing
+  * C1 has been replaced with a smaller form factor
 
 * 1.3 (20.02.2016)
   * added another tact switch which can be used during boot to reset settings
@@ -23,7 +29,7 @@ Custom Hardware board for controlling 5 Led Channels via PWM (RGB + Warm/Cold Wh
 - 5x IRLZ44N Mosfet (logic level gate threshold)
 - 11x 10k resistors, 0805 (R1 - R11)
 - 1x 1k resistors, 0805 (R12)
-- 1x 470 µF Elko RM 3.5 mm (C1) 
+- 1x 330 µF Elko RM 2.5 mm (C1) 
 - 1x 100 µF Elko RM 2.5 mm (C3)
 - 1x 100 nF capacitor 0805(C2)
 - 3x 5,08mm 2pin terminal block
