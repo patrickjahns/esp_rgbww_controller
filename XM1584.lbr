@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -37,10 +51,10 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -57,27 +71,53 @@
 </layers>
 <library>
 <packages>
-<package name="CN1594">
+<package name="XM1584-SMT">
 <wire x1="-11" y1="8.5" x2="11" y2="8.5" width="0.127" layer="21"/>
 <wire x1="11" y1="8.5" x2="11" y2="-8.5" width="0.127" layer="21"/>
 <wire x1="11" y1="-8.5" x2="-11" y2="-8.5" width="0.127" layer="21"/>
 <wire x1="-11" y1="-8.5" x2="-11" y2="8.5" width="0.127" layer="21"/>
-<text x="-8.255" y="5.715" size="1.27" layer="21">IN-</text>
-<text x="-8.255" y="-6.35" size="1.27" layer="21">IN+</text>
-<text x="4.445" y="5.715" size="1.27" layer="21">OUT-</text>
-<text x="3.81" y="-6.35" size="1.27" layer="21">OUT+</text>
-<smd name="IN-(1)" x="-9.525" y="6.985" dx="2.54" dy="1.27" layer="1" roundness="90"/>
-<smd name="IN-(2)" x="-9.525" y="4.9784" dx="2.54" dy="1.27" layer="1" roundness="90"/>
-<smd name="OUT-(1)" x="9.525" y="6.985" dx="2.54" dy="1.27" layer="1" roundness="90"/>
-<smd name="OUT-(2)" x="9.525" y="4.9784" dx="2.54" dy="1.27" layer="1" roundness="90"/>
-<smd name="OUT+(1)" x="9.525" y="-4.5466" dx="2.54" dy="1.27" layer="1" roundness="90"/>
-<smd name="IN+(1)" x="-9.525" y="-4.5466" dx="2.54" dy="1.27" layer="1" roundness="90"/>
+<text x="-6.985" y="5.08" size="1.27" layer="21">IN-</text>
+<text x="-6.985" y="-6.35" size="1.27" layer="21">IN+</text>
+<text x="2.54" y="5.08" size="1.27" layer="21">OUT-</text>
+<text x="2.54" y="-6.35" size="1.27" layer="21">OUT+</text>
+<smd name="IN-(1)" x="-9.525" y="6.5532" dx="2.54" dy="1.27" layer="1" roundness="90"/>
+<smd name="IN-(2)" x="-9.525" y="4.0132" dx="2.54" dy="1.27" layer="1" roundness="90"/>
+<smd name="OUT-(1)" x="9.525" y="6.5532" dx="2.54" dy="1.27" layer="1" roundness="90"/>
+<smd name="OUT-(2)" x="9.525" y="4.0132" dx="2.54" dy="1.27" layer="1" roundness="90"/>
+<smd name="OUT+(1)" x="9.525" y="-4.0132" dx="2.54" dy="1.27" layer="1" roundness="90"/>
+<smd name="IN+(1)" x="-9.525" y="-4.0132" dx="2.54" dy="1.27" layer="1" roundness="90"/>
 <smd name="IN+(2)" x="-9.525" y="-6.5532" dx="2.54" dy="1.27" layer="1" roundness="90"/>
 <smd name="OUT+(2)" x="9.525" y="-6.5532" dx="2.54" dy="1.27" layer="1" roundness="90"/>
 </package>
+<package name="XM1584-TH">
+<text x="-6.985" y="5.08" size="1.27" layer="21">IN-</text>
+<text x="-6.985" y="-6.35" size="1.27" layer="21">IN+</text>
+<text x="2.54" y="5.08" size="1.27" layer="21">OUT-</text>
+<text x="2.54" y="-6.35" size="1.27" layer="21">OUT+</text>
+<pad name="IN-(1)" x="-9.240521875" y="6.66608125" drill="1" shape="long"/>
+<pad name="OUT-(1)" x="9.3419625" y="6.665440625" drill="1" shape="long"/>
+<pad name="IN-(2)" x="-9.245" y="4.0632" drill="1" shape="long"/>
+<pad name="OUT-(2)" x="9.345" y="4.0832" drill="1" shape="long"/>
+<pad name="IN+(1)" x="-9.245" y="-4.0732" drill="1" shape="long"/>
+<pad name="OUT+(1)" x="9.355" y="-4.0732" drill="1" shape="long"/>
+<pad name="IN+(2)" x="-9.240359375" y="-6.5524" drill="1" shape="long"/>
+<pad name="OUT+(2)" x="9.362440625" y="-6.52271875" drill="1" shape="long"/>
+<wire x1="-10.9728" y1="8.5344" x2="11.0744" y2="8.5344" width="0.127" layer="21"/>
+<dimension x1="-10.9728" y1="8.5344" x2="11.0744" y2="8.5344" x3="0.0508" y3="12.9032" textsize="1.27" layer="47" precision="3"/>
+<wire x1="11.0744" y1="8.5344" x2="11.0744" y2="-8.2296" width="0.127" layer="21"/>
+<dimension x1="11.0744" y1="8.5344" x2="11.0744" y2="-8.2296" x3="16.1544" y3="0.1524" textsize="1.27" layer="47" width="0.1" precision="4"/>
+<wire x1="-10.9728" y1="8.5344" x2="-10.9728" y2="-8.2296" width="0.127" layer="21"/>
+<wire x1="-10.9728" y1="-8.2296" x2="11.0744" y2="-8.2296" width="0.127" layer="21"/>
+<dimension x1="12.5984" y1="-8.2296" x2="12.5984" y2="-6.5024" x3="-15.8496" y3="-7.366" textsize="0.8128" layer="47" width="0.1" precision="3"/>
+<dimension x1="13.9192" y1="-6.5024" x2="13.9192" y2="6.7056" x3="-13.716" y3="0.1016" textsize="0.8128" layer="47" width="0.1" precision="3"/>
+<dimension x1="-10.9728" y1="10.3632" x2="-9.2456" y2="10.3632" x3="-10.1092" y3="-9.9568" textsize="0.8128" layer="47" width="0.1" precision="3"/>
+<dimension x1="-9.2456" y1="10.16" x2="9.3472" y2="10.16" x3="0.0508" y3="-11.2776" textsize="0.8128" layer="47" width="0.1" precision="3"/>
+<dimension x1="13.716" y1="-6.604" x2="13.716" y2="-4.064" x3="-11.684" y3="-5.334" textsize="0.8128" layer="47" width="0.1" precision="3"/>
+<dimension x1="13.462" y1="6.604" x2="13.462" y2="4.064" x3="-11.684" y3="5.334" textsize="0.8128" layer="47" width="0.1" precision="3"/>
+</package>
 </packages>
 <symbols>
-<symbol name="CN1594">
+<symbol name="XM1584">
 <circle x="-9" y="7" radius="1" width="0.1" layer="94"/>
 <circle x="-9" y="7" radius="1" width="0.1" layer="94"/>
 <pin name="IN-(1)" x="-10.16" y="7.62" length="middle" direction="in" rot="R180"/>
@@ -96,12 +136,27 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CN1594">
+<deviceset name="XM1584">
 <gates>
-<gate name="G$1" symbol="CN1594" x="0" y="0"/>
+<gate name="G$1" symbol="XM1584" x="0" y="0"/>
 </gates>
 <devices>
-<device name="THROUGH-HOLE" package="CN1594">
+<device name="SMD" package="XM1584-SMT">
+<connects>
+<connect gate="G$1" pin="IN+(1)" pad="IN+(1)"/>
+<connect gate="G$1" pin="IN+(2)" pad="IN+(2)"/>
+<connect gate="G$1" pin="IN-(1)" pad="IN-(1)"/>
+<connect gate="G$1" pin="IN-(2)" pad="IN-(2)"/>
+<connect gate="G$1" pin="OUT+(1)" pad="OUT+(1)"/>
+<connect gate="G$1" pin="OUT+(2)" pad="OUT+(2)"/>
+<connect gate="G$1" pin="OUT-(1)" pad="OUT-(1)"/>
+<connect gate="G$1" pin="OUT-(2)" pad="OUT-(2)"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="XM1584-TH">
 <connects>
 <connect gate="G$1" pin="IN+(1)" pad="IN+(1)"/>
 <connect gate="G$1" pin="IN+(2)" pad="IN+(2)"/>
